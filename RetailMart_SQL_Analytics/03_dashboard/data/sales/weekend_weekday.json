@@ -1,0 +1,1 @@
+[{"dayType" : "Weekday", "orders" : 10122, "revenue" : 244258658.58, "avgOrderValue" : 24131.46, "pctOfOrders" : 71.26, "pctOfRevenue" : 72.46}, {"dayType" : "Weekend", "orders" : 4082, "revenue" : 92831841.25, "avgOrderValue" : 22741.75, "pctOfOrders" : 28.74, "pctOfRevenue" : 27.54}]

@@ -1,0 +1,65 @@
+[2026-10-22 20:19:29] Starting JSON export process...
+[2026-10-22 20:19:29] WARNING: Refresh flag detected - Refreshing all materialized views...
+  module  |                            view_name                             | status  | execution_time  |        refreshed_at        
+----------+------------------------------------------------------------------+---------+-----------------+----------------------------
+ Sales    | mv_monthly_sales_dashboard, mv_executive_summary                 | SUCCESS | 00:00:00.132138 | 2026-10-22 20:19:29.979279
+ Product  | mv_top_products, mv_abc_analysis                                 | SUCCESS | 00:00:00.116099 | 2026-10-22 20:19:30.095483
+ Customer | mv_customer_lifetime_value, mv_rfm_analysis, mv_cohort_retention | SUCCESS | 00:00:00.170455 | 2026-10-22 20:19:30.266004
+ Store    | mv_store_performance                                             | SUCCESS | 00:00:00.036424 | 2026-10-22 20:19:30.302525
+(4 rows)
+[2026-10-22 20:19:30] SUCCESS: All materialized views refreshed successfully!
+[2026-10-22 20:19:30] WARNING: Creating backup of existing files...
+[2026-10-22 20:19:30] SUCCESS: Backup created: ./03_dashboard/data_backup_20261022_201930
+[2026-10-22 20:19:30] INFO: Creating directory structure...
+[2026-10-22 20:19:30] INFO: Created directory: ./03_dashboard/data/sales
+[2026-10-22 20:19:30] INFO: Created directory: ./03_dashboard/data/products
+[2026-10-22 20:19:30] INFO: Created directory: ./03_dashboard/data/customers
+[2026-10-22 20:19:31] INFO: Created directory: ./03_dashboard/data/stores
+[2026-10-22 20:19:31] INFO: Exporting: Executive Summary KPIs
+[2026-10-22 20:19:31] SUCCESS: Exported: ./03_dashboard/data/sales/executive_summary.json
+[2026-10-22 20:19:31] INFO: Exporting: Monthly Sales Trend (12 months)
+[2026-10-22 20:19:31] SUCCESS: Exported: ./03_dashboard/data/sales/monthly_trend.json
+[2026-10-22 20:19:31] INFO: Exporting: Recent 30-Day Trend
+[2026-10-22 20:19:32] SUCCESS: Exported: ./03_dashboard/data/sales/recent_trend.json
+[2026-10-22 20:19:32] INFO: Exporting: Sales by Day of Week
+[2026-10-22 20:19:32] SUCCESS: Exported: ./03_dashboard/data/sales/dayofweek.json
+[2026-10-22 20:19:32] INFO: Exporting: Sales by Payment Mode
+[2026-10-22 20:19:32] SUCCESS: Exported: ./03_dashboard/data/sales/payment_mode.json
+[2026-10-22 20:19:32] INFO: Exporting: Quarterly Sales Performance
+[2026-10-22 20:19:32] SUCCESS: Exported: ./03_dashboard/data/sales/quarterly_sales.json
+[2026-10-22 20:19:32] INFO: Exporting: Weekend vs Weekday Sales
+[2026-10-22 20:19:33] SUCCESS: Exported: ./03_dashboard/data/sales/weekend_weekday.json
+[2026-10-22 20:19:33] INFO: Exporting: Top 20 Products
+[2026-10-22 20:19:33] SUCCESS: Exported: ./03_dashboard/data/products/top_products.json
+[2026-10-22 20:19:33] INFO: Exporting: Category Performance
+[2026-10-22 20:19:33] SUCCESS: Exported: ./03_dashboard/data/products/category_performance.json
+[2026-10-22 20:19:33] INFO: Exporting: Brand Performance (Top 20)
+[2026-10-22 20:19:33] SUCCESS: Exported: ./03_dashboard/data/products/brand_performance.json
+[2026-10-22 20:19:33] INFO: Exporting: ABC Classification
+[2026-10-22 20:19:34] SUCCESS: Exported: ./03_dashboard/data/products/abc_analysis.json
+[2026-10-22 20:19:34] INFO: Exporting: Inventory Status Summary
+[2026-10-22 20:19:34] SUCCESS: Exported: ./03_dashboard/data/products/inventory_status.json
+[2026-10-22 20:19:34] INFO: Exporting: Top 50 Customers by CLV
+[2026-10-22 20:19:34] SUCCESS: Exported: ./03_dashboard/data/customers/top_customers.json
+[2026-10-22 20:19:34] INFO: Exporting: CLV Tier Distribution
+[2026-10-22 20:19:34] SUCCESS: Exported: ./03_dashboard/data/customers/clv_distribution.json
+[2026-10-22 20:19:34] INFO: Exporting: RFM Customer Segments
+[2026-10-22 20:19:35] SUCCESS: Exported: ./03_dashboard/data/customers/rfm_segments.json
+[2026-10-22 20:19:35] INFO: Exporting: Churn Risk Analysis
+[2026-10-22 20:19:35] SUCCESS: Exported: ./03_dashboard/data/customers/churn_risk.json
+[2026-10-22 20:19:35] INFO: Exporting: Customer Demographics
+[2026-10-22 20:19:35] SUCCESS: Exported: ./03_dashboard/data/customers/demographics.json
+[2026-10-22 20:19:35] INFO: Exporting: Geographic Distribution (Top 50)
+[2026-10-22 20:19:35] SUCCESS: Exported: ./03_dashboard/data/customers/geography.json
+[2026-10-22 20:19:35] INFO: Exporting: Cohort Retention Analysis
+[2026-10-22 20:19:36] SUCCESS: Exported: ./03_dashboard/data/customers/cohort_retention.json
+[2026-10-22 20:19:36] INFO: Exporting: Top 20 Stores
+[2026-10-22 20:19:36] SUCCESS: Exported: ./03_dashboard/data/stores/top_stores.json
+[2026-10-22 20:19:36] INFO: Exporting: Regional Performance Summary
+[2026-10-22 20:19:36] SUCCESS: Exported: ./03_dashboard/data/stores/regional_performance.json
+[2026-10-22 20:19:36] INFO: Exporting: Store Inventory Health
+[2026-10-22 20:19:36] SUCCESS: Exported: ./03_dashboard/data/stores/store_inventory.json
+[2026-10-22 20:19:36] INFO: Exporting: Employee Distribution by Store
+[2026-10-22 20:19:37] SUCCESS: Exported: ./03_dashboard/data/stores/employee_distribution.json
+[2026-10-22 20:19:37] SUCCESS: All 23 JSON files exported successfully!
+[2026-10-22 20:19:37] JSON export process completed (0 failures)
